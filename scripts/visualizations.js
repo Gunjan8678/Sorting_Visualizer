@@ -7,7 +7,7 @@
 
 //We only have to change background-color and height of the sorting element.
 
-var speed = 1000;
+var speed = 500;
 
 delay_time = 10000 / (Math.floor(array_size / 10) * speed); //Decrease numerator to increase speed.
 
