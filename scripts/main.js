@@ -6,7 +6,7 @@ Variable naming convention: <object>_<action>_<objectname>; Example -> Button_cl
 var inp_as = document.getElementById("a_size"),
   array_size = inp_as.value;
 var inp_gen = document.getElementById("a_generate");
-var inp_aspeed = document.getElementById("a_speed");
+
 //var array_speed=document.getElementById('a_speed').value;
 
 var butts_algos = document.querySelectorAll(".algos button");
@@ -62,7 +62,6 @@ function disable_buttons() {
     butts_algos[i].disabled = true;
     inp_as.disabled = true;
     inp_gen.disabled = true;
-    inp_aspeed.disabled = true;
   }
 }
 
@@ -73,21 +72,6 @@ function runalgo() {
   switch (this.innerHTML) {
     case "Bubble":
       Bubble();
-      break;
-    case "Selection":
-      Selection_sort();
-      break;
-    case "Insertion":
-      Insertion();
-      break;
-    case "Merge":
-      Merge();
-      break;
-    case "Quick":
-      Quick();
-      break;
-    case "Heap":
-      Heap();
       break;
   }
 }
